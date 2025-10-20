@@ -1,0 +1,29 @@
+####################################################################################################
+###                                           Theme                                              ##
+####################################################################################################
+brand_cols <- c(
+  dark_teal  = "#264653",
+  green_teal = "#2A9D8F",
+  sand_yellow = "#E9C46A",
+  orange     = "#F4A261",
+  soft_red   = "#E76F51"
+)
+
+# ---- Theme ----
+theme_brand <- function() {
+  theme_minimal(base_family = "Segoe UI") +
+    theme(
+      text             = element_text(colour = brand_cols["dark_teal"]),
+      plot.title       = element_text(size = 20, face = "bold", color = "#264653"),
+      plot.subtitle = element_text(size = 18, color = "#264653"),
+      strip.text = element_text(size = 14, color = "#264653"),
+      axis.title = element_text(size = 16, color = "#264653"),
+      axis.text = element_text(size = 12),
+      panel.grid.major = element_line(colour = "#E0E0E0", linewidth = 0.3),
+      panel.grid.minor = element_blank(),
+      plot.background  = element_rect(fill = "white", colour = NA)
+    )
+}
+
+# ---- Apply Globally ----
+theme_set(theme_brand())

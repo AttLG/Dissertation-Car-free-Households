@@ -1,0 +1,52 @@
+
+# --- Data (keep raw data private) ---
+data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.dta
+*.parquet
+*.feather
+*.rds
+*.rdata
+
+# --- Outputs you don't want tracked (keep figures/tables if you like) ---
+outputs/*.pdf
+outputs/*.docx
+# Uncomment the next line to also ignore generated figures/tables:
+# outputs/figures/
+# outputs/tables/
+
+# --- R/RStudio ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.Renviron
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- LaTeX build artefacts ---
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lot
+*.lof
+
+# --- Quarto/knitr cache ---
+*_cache/
+*.knit.md
+*.utf8.md
